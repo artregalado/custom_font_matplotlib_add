@@ -6,6 +6,8 @@ The main reference comes from this article: https://towardsdatascience.com/how-t
 Essentially, download and unzip the files. Then use matplotlib.font_manager to add the fonts to the system then can be used with font family. 
 
 Minimal example: 
+
+```
 import matplotlib.font_manager as font_manager
 
 # Add every font at the specified location
@@ -15,3 +17,4 @@ for font in font_manager.findSystemFonts(font_dir):
 
 # Set font family globally
 rcParams['font.family'] = 'Merriweather'
+```
